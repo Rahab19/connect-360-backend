@@ -1,0 +1,129 @@
+#### 
+POST http://localhost:4000/auth/register
+Content-Type: application/json
+
+# {
+#   "name": "Rahab mwai",
+#   "email": "rahab@gok.com",
+#   "password": "Rahab Mwai@1!"
+# }
+
+{
+  "name": "grace",
+   "email": "grace@gmail.com",
+   "password": "Grace@1!"
+ }
+
+
+####
+POST http://localhost:4000/auth/login
+Content-Type: application/json
+
+# Authorization: Bearer 
+
+# {
+#   "email": "admin@admin.com",
+#   "password": "Admin @1!"
+# }
+
+{
+  
+  "email": "grace@gmail.com",
+  "password": "Grace@1!"
+}
+
+# {
+#   "email": "rahab@gok.com",
+#   "password": "Rahab Mwai@1!"
+# }
+
+######
+DELETE http://localhost:4000/auth/users/6669c17d-219d-48ac-8ffe-b604780755ca
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiIwZTI3ZDQ4OS01ZDM2LTRlMjYtOTA4Ny0wMmI4OTg2MmIzOWYiLCJOYW1lIjoiYWRtaW4iLCJpYXQiOjE3MjE2NTMzODksImV4cCI6MTcyMTY2MDU4OX0.RfnoeSgz0QJ9W3RQRaCLVT0kPxPJ1Ge7QXy4sS__kOs
+
+
+####
+GET http://localhost:4000/auth/users
+
+####
+POST http://localhost:4000/view
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY2YmMyYjNhLTAzYmUtNDM0NS04YjczLTI4OTAxY2RkN2U5OSIsImVtYWlsIjoiZ3JhY2VAZ21haWwuY29tIiwicm9sZSI6ImNpdGl6ZW4iLCJpYXQiOjE3MjE4OTk3NzYsImV4cCI6MTcyMTkwNjk3Nn0.46T9Kw4aSEvuWwW_DsNMEDkLbIjrHEAvA-58iwZc1lE
+
+{
+  "usersid":"f6bc2b3a-03be-4345-8b73-28901cdd7e99",
+  "title":"finance bill",
+  "description":"I do not support the finance bill"
+   
+}
+
+####
+GET http://localhost:4000/view
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY2YmMyYjNhLTAzYmUtNDM0NS04YjczLTI4OTAxY2RkN2U5OSIsImVtYWlsIjoiZ3JhY2VAZ21haWwuY29tIiwicm9sZSI6ImNpdGl6ZW4iLCJpYXQiOjE3MjE4OTk3NzYsImV4cCI6MTcyMTkwNjk3Nn0.46T9Kw4aSEvuWwW_DsNMEDkLbIjrHEAvA-58iwZc1lE 
+
+
+####
+GET http://localhost:4000/view/3dd4f1f6-0a3a-45f4-9283-38b2410de83f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTdWIiOiI4ZWE3ODg4YS1jOTVmLTQ1ZGYtYTExMi1kNGJjZWMyMTU5ODQiLCJOYW1lIjoiZ3JhY2UiLCJpYXQiOjE3MjE3MzMwMjIsImV4cCI6MTcyMTc0MDIyMn0.neo9Gg8QKCoy9zNo4itAmSPM3sroGCh01_proqJB_XM
+
+
+######
+DELETE http://localhost:4000/view/3dd4f1f6-0a3a-45f4-9283-38b2410de83f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY2YmMyYjNhLTAzYmUtNDM0NS04YjczLTI4OTAxY2RkN2U5OSIsImVtYWlsIjoiZ3JhY2VAZ21haWwuY29tIiwicm9sZSI6ImNpdGl6ZW4iLCJpYXQiOjE3MjE4OTk3NzYsImV4cCI6MTcyMTkwNjk3Nn0.46T9Kw4aSEvuWwW_DsNMEDkLbIjrHEAvA-58iwZc1lE
+
+
+####
+POST http://localhost:4000/incident
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY2YmMyYjNhLTAzYmUtNDM0NS04YjczLTI4OTAxY2RkN2U5OSIsImVtYWlsIjoiZ3JhY2VAZ21haWwuY29tIiwicm9sZSI6ImNpdGl6ZW4iLCJpYXQiOjE3MjE5MTE5ODQsImV4cCI6MTcyMTkyOTk4NH0.9ccO4Wboak-bMexFMRUHTUNjjPhtG6jzN7RCMFiz-3w
+
+{
+  "usersid":"f6bc2b3a-03be-4345-8b73-28901cdd7e99",
+  "title":"floods in jkia",
+  "description":"There are leaking roofs in the jkia terminal 1D",
+  "mediaUrl":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pulselive.co.ke%2Fnews%2Flocal%2Fareas-of-nairobi-metropolitan-area-to-experience-heavy-rains-and-floods-on-sunday%2F304xd9j&psig=AOvVaw2v3zZj_4657tWJ_mA4BDUN&ust=1721998761424000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOiC3NefwocDFQAAAAAdAAAAABAE",
+  "reportedby":"grace"
+}
+
+
+#####get incidents
+GET http://localhost:4000/incident
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY2YmMyYjNhLTAzYmUtNDM0NS04YjczLTI4OTAxY2RkN2U5OSIsImVtYWlsIjoiZ3JhY2VAZ21haWwuY29tIiwicm9sZSI6ImNpdGl6ZW4iLCJpYXQiOjE3MjE5MTE5ODQsImV4cCI6MTcyMTkyOTk4NH0.9ccO4Wboak-bMexFMRUHTUNjjPhtG6jzN7RCMFiz-3w
+
+
+
+####get incident
+GET http://localhost:4000/incident/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY2YmMyYjNhLTAzYmUtNDM0NS04YjczLTI4OTAxY2RkN2U5OSIsImVtYWlsIjoiZ3JhY2VAZ21haWwuY29tIiwicm9sZSI6ImNpdGl6ZW4iLCJpYXQiOjE3MjE5MTE5ODQsImV4cCI6MTcyMTkyOTk4NH0.9ccO4Wboak-bMexFMRUHTUNjjPhtG6jzN7RCMFiz-3w
+
+
+
+####
+DELETE http://localhost:4000/incident
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY2YmMyYjNhLTAzYmUtNDM0NS04YjczLTI4OTAxY2RkN2U5OSIsImVtYWlsIjoiZ3JhY2VAZ21haWwuY29tIiwicm9sZSI6ImNpdGl6ZW4iLCJpYXQiOjE3MjE5MTE5ODQsImV4cCI6MTcyMTkyOTk4NH0.9ccO4Wboak-bMexFMRUHTUNjjPhtG6jzN7RCMFiz-3w
+
+
+####
+POST http://localhost:4000/poll/createPoll
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY2YmMyYjNhLTAzYmUtNDM0NS04YjczLTI4OTAxY2RkN2U5OSIsImVtYWlsIjoiZ3JhY2VAZ21haWwuY29tIiwicm9sZSI6ImNpdGl6ZW4iLCJpYXQiOjE3MjE5MTE5ODQsImV4cCI6MTcyMTkyOTk4NH0.9ccO4Wboak-bMexFMRUHTUNjjPhtG6jzN7RCMFiz-3w
+
+
+####GETPOLLS
+GET http://localhost:4000/poll
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY2YmMyYjNhLTAzYmUtNDM0NS04YjczLTI4OTAxY2RkN2U5OSIsImVtYWlsIjoiZ3JhY2VAZ21haWwuY29tIiwicm9sZSI6ImNpdGl6ZW4iLCJpYXQiOjE3MjE5MTE5ODQsImV4cCI6MTcyMTkyOTk4NH0.9ccO4Wboak-bMexFMRUHTUNjjPhtG6jzN7RCMFiz-3w
+
+
+#### getpoll
+GET http://localhost:4000/poll/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY2YmMyYjNhLTAzYmUtNDM0NS04YjczLTI4OTAxY2RkN2U5OSIsImVtYWlsIjoiZ3JhY2VAZ21haWwuY29tIiwicm9sZSI6ImNpdGl6ZW4iLCJpYXQiOjE3MjE5MTE5ODQsImV4cCI6MTcyMTkyOTk4NH0.9ccO4Wboak-bMexFMRUHTUNjjPhtG6jzN7RCMFiz-3w
+
+
+####
+DELETE  http://localhost:4000/poll/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY2YmMyYjNhLTAzYmUtNDM0NS04YjczLTI4OTAxY2RkN2U5OSIsImVtYWlsIjoiZ3JhY2VAZ21haWwuY29tIiwicm9sZSI6ImNpdGl6ZW4iLCJpYXQiOjE3MjE5MTE5ODQsImV4cCI6MTcyMTkyOTk4NH0.9ccO4Wboak-bMexFMRUHTUNjjPhtG6jzN7RCMFiz-3w
+
+
+###
+
+POST http://localhost:4000/poll/createPoll
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY2YmMyYjNhLTAzYmUtNDM0NS04YjczLTI4OTAxY2RkN2U5OSIsImVtYWlsIjoiZ3JhY2VAZ21haWwuY29tIiwicm9sZSI6ImNpdGl6ZW4iLCJpYXQiOjE3MjE5MTE5ODQsImV4cCI6MTcyMTkyOTk4NH0.9ccO4Wboak-bMexFMRUHTUNjjPhtG6jzN7RCMFiz-3w

@@ -1,0 +1,8 @@
+USE connect360
+GO
+CREATE OR ALTER PROCEDURE getFeedback
+    @id VARCHAR(36)
+AS
+BEGIN
+    SELECT * FROM Feedback WHERE id = @id
+END

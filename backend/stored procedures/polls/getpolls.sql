@@ -1,0 +1,11 @@
+USE connect360
+GO
+
+CREATE OR ALTER PROCEDURE getPolls
+AS
+BEGIN
+  SELECT * FROM Polls
+  ORDER BY created_at DESC
+END;
+GO
+

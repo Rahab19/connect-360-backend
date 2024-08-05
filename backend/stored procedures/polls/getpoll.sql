@@ -1,0 +1,10 @@
+USE connect360
+GO
+
+CREATE OR ALTER PROCEDURE getPoll
+  @id VARCHAR (36)
+AS
+BEGIN
+  SELECT * FROM Polls WHERE Id = @id;
+END;
+GO

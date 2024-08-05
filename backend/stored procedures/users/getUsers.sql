@@ -1,0 +1,9 @@
+USE connect360;
+GO
+
+CREATE OR ALTER PROCEDURE getUsers
+AS
+BEGIN
+    SELECT * FROM users WHERE isDeleted = 0
+END
+GO

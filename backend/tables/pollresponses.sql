@@ -1,0 +1,9 @@
+USE connect360
+GO
+CREATE TABLE poll_responses (
+  id VARCHAR (36) PRIMARY KEY,
+  pollsid VARCHAR (36) NOT NULL REFERENCES polls(id),
+  usersid VARCHAR (36) NOT NULL REFERENCES users(id),
+  response NVARCHAR(MAX) NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT GETDATE()
+);

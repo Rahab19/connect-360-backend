@@ -1,0 +1,7 @@
+USE connect360
+GO
+CREATE OR ALTER PROCEDURE getFeedbacks
+AS
+BEGIN
+    SELECT * FROM Feedback;
+END;
